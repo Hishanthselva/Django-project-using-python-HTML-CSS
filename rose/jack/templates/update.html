@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'hisha.html' %}
+{% block body_block %}
+<html>
+<head>
+	<title></title>
+</head>
+<center>
+<body>
+	<form method="POST">
+	{% csrf_token %}
+	<input type="text" name="no" value="{{u.no}}"><br>
+	<input type="text" name="name" value="{{u.name}}"><br>
+	<input type="text" name="age" value="{{u.age}}"><br>
+	<input type="text" name="city" value="{{u.city}}"><br>
+	<button>submit</button>
+	</form>
+</body>
+</center>
+{% endblock %}
+</html>
+
+
